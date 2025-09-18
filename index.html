@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="relative">
+  <div class="nav-bar flex items-center justify-between mt-[30px] mx-6 h-auto md:h-[54px] sticky-top-0">
+    
+    <div class="icon flex-shrink-0">
+      <img class="h-10 md:h-[30px] object-contain" src="./imgs/Chief LA.png" alt="">
+    </div>
+    
+    <div class="nav-content hidden md:block px-4">
+      <ul class="flex justify-between items-center gap-4 w-[449px] font-bold text-[16px] underline">
+        <li><a href="">Home</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>     
+    </div>
+
+   
+    <div class="accounts flex items-center gap-4">
+      <img class="w-6 h-6 hidden sm:block" src="./imgs/bell (1).png" alt="">
+      <img class="w-15 h-15 rounded-full" src="./imgs/Ellipse 1.png" alt="">
+      <a class="hidden sm:inline self-center text-[24px] no-underline text-[#7200B8] font-bold" href="">Kunle Ajayi</a>
+
+      <button id="nav-toggle" class="md:hidden text-2xl font-bold">☰</button>
+    </div>
+  </div>
+
+
+  <div id="mobile-nav" class="hidden flex flex-col bg-white shadow-md p-4 absolute top-[80px] left-0 w-full z-10 md:hidden">
+    <a href="" class="py-2 font-bold">Home</a>
+    <a href="" class="py-2 font-bold">About us</a>
+    <a href="" class="py-2 font-bold">Services</a>
+    <a href="" class="py-2 font-bold">Contact Us</a>
+  </div>
+
+  <div class="main-content-body flex m-[20px]">
+    <div id="sidebar" class="vertical-dashboard bg-black text-white fixed md:static left-0 top-0 md:ml-[1%] mr-[46px] rounded-lg w-[254px] h-[100vh] md:h-[830px] text-[20px] pl-[20px] pt-[50px] transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-20">
+      <div class="dashboard-icon bg-[#A717FE] flex w-[180px] h-[70px] mb-[50px] rounded-xl items-center place-content-center">
+        <img class="mr-[10px] w-[30px] h-[30px]" src="./imgs/home.png" alt="">
+        <a href="">Dashboard</a>
+      </div>
+      
+      <div class="others">
+        <div class="transaction flex mb-[50px]">
+          <img class="mr-[20px] w-[30px] h-[30px]" src="./imgs/credit-card.png" alt="">
+          <a href="">Transaction</a>
+        </div>
+        <div class="notification flex mb-[50px]">
+          <img class="mr-[20px] w-[30px] h-[30px]" src="./imgs/bell.png" alt="">
+          <a href="">Notification</a>
+        </div>
+        <div class="support flex mb-[50px]">
+          <img class="mr-[20px] w-[30px] h-[30px]" src="./imgs/Vector (1).png" alt="">
+          <a href="">Support</a>
+        </div>
+        <div class="settings flex mb-[50px]">
+          <img class="mr-[20px] w-[30px] h-[30px]" src="./imgs/Vector (2).png" alt="">
+          <a href="">Settings</a>
+        </div>
+      </div>
+
+      <div class="log-out-button flex mt-[200px]">
+        <img class="mr-[20px] w-[30px] h-[30px]" src="./imgs/log-in.png" alt="">
+        <a href="">Log out</a>
+      </div>
+    </div>
+
+    
+    <button id="sidebar-toggle" class="md:hidden fixed left-4 bottom-4 bg-[#7200B8] text-white p-3 rounded-full z-30">☰</button>
+
+    <div class="main-content-body flex flex-col md:flex-row m-[20px] gap-6">
+
+  
+  <div class="horizontal-dashboard flex-1">
+    
+    <div class="row-1 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+      <p class="text-[20px] md:text-[24px] font-bold">Dashboard</p>
+      <button class="text-[16px] md:text-[20px] border-2 border-solid p-2 md:p-[10px] border-[#7200B8] rounded-lg">
+        Reviews & Feedback
+      </button>
+    </div>
+
+   
+    <div class="row-2 text-[18px] md:text-[24px] text-white mt-[14px] flex flex-col md:flex-row gap-4">
+      <button class="flex-1 p-4 md:p-[20px] h-[80px] md:h-[96px] bg-black rounded-lg font-bold">Loans Available</button>
+      <button class="flex-1 p-4 md:p-[20px] h-[80px] md:h-[96px] bg-black rounded-lg font-bold">Repayment Options</button>
+      <button class="flex-1 p-4 md:p-[20px] h-[80px] md:h-[96px] bg-black rounded-lg font-bold">Percentage Calculator</button>
+    </div>
+
+    
+    <div class="row-3 flex flex-col md:flex-row md:justify-between gap-6 mt-[30px]">
+      <button class="bg-black text-white p-4 w-full md:w-[345px] h-[200px] md:h-[321px] rounded-xl font-bold text-[40px]">
+        REQUEST LOAN
+      </button>
+      <button class="bg-black text-white p-4 w-full md:w-[345px] h-[200px] md:h-[321px] rounded-xl font-bold text-[40px]">
+        CHOOSE A REPAYMENT PLAN
+      </button>
+      <div class="para-part w-full md:w-[300px] h-auto md:h-[500px] bg-black text-white p-[20px] rounded-xl">
+        <p class="text-[20px] md:text-[24px] font-bold text-center">Latest Update</p>
+        <p class="text-[14px] mb-[10px]">Lorem ipsum dolor sit amet consectetur. Iaculis diam pretium sem porttitor nibh.</p>
+        <p class="text-[14px] mb-[10px]">Lorem ipsum dolor sit amet consectetur. Iaculis diam pretium sem porttitor nibh.</p>
+        <p class="text-[14px] mb-[10px]">Lorem ipsum dolor sit amet consectetur. Iaculis diam pretium sem porttitor nibh.</p>
+        <p class="text-[14px] mb-[10px]">Lorem ipsum dolor sit amet consectetur. Iaculis diam pretium sem porttitor nibh.</p>
+      </div>
+    </div>
+
+    <div class="row-4 flex flex-col md:flex-row md:justify-between gap-4 mt-[24px]">
+      <button class="bg-black text-white text-[18px] md:text-[24px] py-2 px-6 rounded-xl font-bold">
+        Loan application status
+      </button>
+      <div class="chat-now flex flex-col items-center md:items-end">
+        <p class="text-[#7200B8] font-bold text-[18px] md:text-[20px] text-center">Chat Now!</p>
+        <img class="w-[40px] md:w-[60px]" src="./imgs/comment-dots.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', () => {
+      document.getElementById('mobile-nav').classList.toggle('hidden');
+    });
+
+    document.getElementById('sidebar-toggle').addEventListener('click', () => {
+      document.getElementById('sidebar').classList.toggle('-translate-x-full');
+    });
+  </script>
+</body>
+</html>
